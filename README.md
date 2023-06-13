@@ -1,4 +1,3 @@
-Read me (RNNG-fMRI)
 
 # Localizing Syntactic Composition with Left-corner Recurrent Neural Network Grammars in Naturalistic Reading
 
