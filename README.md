@@ -7,7 +7,7 @@ This repository provides the code for the paper 'Localizing Syntactic Compositio
 `R==4.2.1`
 
 ## Preparing for Regressors
-The outputs from five gram, LSTM, and RNNGs are from the models that were implemented in RNNG-EyeTrack. Place the outputs (.tsv file) on `regressors/`. `BCCWJ-fMRI_regressors.ipynb` convolves the regressors with the HRF (hrf_model = "spm", TR =2.0) to estimate the BOLD signals. Correlations among predictors are also calculated. `Perplexity.ipynb` calculates the perplexities for five-gram, LSTM and RNNGs. `BCCWJ-fMRI_regressors.ipynb` and `Perplexity.ipynb` are located in the `regressors` directory.
+The outputs from five gram, LSTM, and RNNGs are from the models that were implemented in [RNNG-LC](https://github.com/osekilab/RNNG-LC). Place the outputs (.tsv file) on `regressors/`. `BCCWJ-fMRI_regressors.ipynb` convolves the regressors with the HRF (hrf_model = "spm", TR =2.0) to estimate the BOLD signals. Correlations among predictors are also calculated. `Perplexity.ipynb` calculates the perplexities for five-gram, LSTM and RNNGs. `BCCWJ-fMRI_regressors.ipynb` and `Perplexity.ipynb` are located in the `regressors` directory.
 
 ## Concatenating regressors and fMRI data
 After convolving the regressors with HRF, the csv file was manually separated into four blocks (A,B,C,D). For each block, remove the first 10TR (20 seconds) and place the files on `data/model-regressors/`. These were used for concatenating with the fMRI data via `nii2csv.ipynb`. Once the fMRI data become publicly available, add fMRI data to `data/nii/` and the head movement parameters to `data/rp/`. `nii2csv.ipynb` is located in the `regressors` directory.
