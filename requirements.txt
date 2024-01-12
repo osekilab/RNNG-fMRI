@@ -11,7 +11,7 @@ Cython==0.29.36
 debugpy==1.6.8
 decorator==5.1.1
 executing==1.2.0
-fonttools==4.42.0
+fonttools==4.43.0
 idna==3.4
 imageio==2.31.1
 iniconfig==2.0.0
