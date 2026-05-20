@@ -1,0 +1,21 @@
+name: bccwj-fmri
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyter
+  - ipykernel=6.25.0
+  - numpy=1.25.2
+  - pandas=1.5.3
+  - matplotlib=3.7.2
+  - seaborn=0.12.2
+  - scipy=1.10.1
+  - scikit-learn=1.3.0
+  - nibabel=4.0.2
+  - nilearn=0.10.1
+  - natsort=8.4.0
+  - pip:
+    - atlasreader==0.1.2
+    - pystan==2.19.1.1
+    - nideconv @ git+https://github.com/VU-Cog-Sci/nideconv@bdee405c671329c79bf200d26f087aea62557106
